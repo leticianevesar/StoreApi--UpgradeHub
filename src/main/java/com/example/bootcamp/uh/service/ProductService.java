@@ -20,7 +20,6 @@ public class ProductService {
 
     public ProductService(ProductRepository productRepository, PurchaseService purchaseService, PurchaseRepository purchaseRepository) {
         this.productRepository = productRepository;
-        this.productRepository = productRepository;
         this.purchaseRepository = purchaseRepository;
     }
 
@@ -53,7 +52,7 @@ public class ProductService {
     }
 
     //remove product From Purchase
-    public void removeCoffeeFromPurchase(Long purchaseId, Long productId) {
+    public void removeProductsFromPurchase(Long purchaseId, Long productId) {
         Product product = getProductById(productId);
         Purchase purchase = this.getPurchaseById(purchaseId);
         purchase.getPurchase_product().remove(product);

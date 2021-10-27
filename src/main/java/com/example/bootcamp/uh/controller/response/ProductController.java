@@ -27,7 +27,7 @@ public class ProductController {
     //get all products
     @GetMapping("/products")
     public List<ProductResponse> getAllProducts(){
-        List<Product> products = ProductService.getAllProducts();
+        List<Product> products = productService.getAllProducts();
         List<ProductResponse> productResponseList = new ArrayList<>();
 
         for(Product product: products){
