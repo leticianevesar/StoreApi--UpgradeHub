@@ -1,4 +1,4 @@
-package com.example.bootcamp.uh.controller.response;
+package com.example.bootcamp.uh.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

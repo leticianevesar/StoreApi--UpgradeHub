@@ -1,6 +1,6 @@
 package com.example.bootcamp.uh.service;
 
-import com.example.bootcamp.uh.controller.request.ProductRequest;
+import com.example.bootcamp.uh.request.ProductRequest;
 import com.example.bootcamp.uh.exception.ProductNotFound;
 import com.example.bootcamp.uh.exception.PurchaseNotFound;
 import com.example.bootcamp.uh.model.Product;

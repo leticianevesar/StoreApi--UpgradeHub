@@ -1,4 +1,4 @@
-package com.example.bootcamp.uh.controller.request;
+package com.example.bootcamp.uh.request;
 
 import com.example.bootcamp.uh.model.ProductType;
 import lombok.AllArgsConstructor;

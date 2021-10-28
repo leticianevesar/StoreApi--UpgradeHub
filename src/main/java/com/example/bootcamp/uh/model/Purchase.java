@@ -6,12 +6,13 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 @Table(name = "customer")
 public class Purchase {
     @Id
@@ -27,5 +28,5 @@ public class Purchase {
     @JoinTable(name = "purchase_product",
             joinColumns = @JoinColumn(name = "purchaseId"),
             inverseJoinColumns = @JoinColumn(name = "productId"))
-    private List<Product> purchase_product = new ArrayList<>();
+    private List<Product> purchase_product;
 }

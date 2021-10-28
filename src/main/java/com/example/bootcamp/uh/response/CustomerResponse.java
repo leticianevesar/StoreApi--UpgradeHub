@@ -1,9 +1,9 @@
-package com.example.bootcamp.uh.controller;
+package com.example.bootcamp.uh.response;
 
 import lombok.*;
 import javax.persistence.Entity;
 
-@Entity
+
 @Getter
 @Setter
 @Builder

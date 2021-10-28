@@ -8,13 +8,13 @@
 		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.loja</groupId>
-	<artifactId>loja</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>bootcamp.uh</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>loja</name>
-	<description>API Project Loja</description>
+	<name>bootcamp.uh</name>
+	<description>API Project storeProject</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

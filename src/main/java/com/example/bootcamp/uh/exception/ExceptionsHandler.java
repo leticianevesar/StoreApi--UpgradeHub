@@ -1,6 +1,6 @@
 package com.example.bootcamp.uh.exception;
 
-import com.example.bootcamp.uh.controller.response.HttpErrorResponse;
+import com.example.bootcamp.uh.response.HttpErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

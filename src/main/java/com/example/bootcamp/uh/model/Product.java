@@ -6,11 +6,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
+
 @Builder
 @Setter
 @Getter
-@Entity
 @AllArgsConstructor
+@Entity
 @Table(name = "products")
 public class Product {
     @Id
@@ -20,8 +22,8 @@ public class Product {
     private float price;
     @Enumerated
     private ProductType type;
-    @ManyToMany
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+
+    @ManyToMany(mappedBy = "purchase_product")
+    private List<Purchase> purchases;
 
     }

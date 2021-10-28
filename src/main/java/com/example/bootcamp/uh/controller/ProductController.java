@@ -1,8 +1,9 @@
-package com.example.bootcamp.uh.controller.response;
+package com.example.bootcamp.uh.controller;
 
 
-import com.example.bootcamp.uh.controller.request.ProductRequest;
+import com.example.bootcamp.uh.request.ProductRequest;
 import com.example.bootcamp.uh.model.Product;
+import com.example.bootcamp.uh.response.ProductResponse;
 import com.example.bootcamp.uh.service.ProductService;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.validation.annotation.Validated;
@@ -55,7 +56,7 @@ public class ProductController {
     }
 
     //create product
-    @PostMapping(value = "/coffees", consumes = "application/json")
+    @PostMapping(value = "/products", consumes = "application/json")
     public ProductResponse createProduct(@RequestBody @Valid ProductRequest productRequest){
         Product product= productService.createProduct(Product.builder()
                 .name(productRequest.getName())

@@ -1,9 +1,9 @@
 package com.example.bootcamp.uh.controller;
 
-import com.example.bootcamp.uh.controller.request.CustomerRequest;
+import com.example.bootcamp.uh.request.CustomerRequest;
 import com.example.bootcamp.uh.model.Customer;
+import com.example.bootcamp.uh.response.CustomerResponse;
 import com.example.bootcamp.uh.service.CustomerService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
