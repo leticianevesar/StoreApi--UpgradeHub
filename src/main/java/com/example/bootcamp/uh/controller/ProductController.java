@@ -94,7 +94,7 @@ public class ProductController {
                 product.getPrice()
         );
     }
-    //remove products from purchase
+    //delete products from purchase
     @DeleteMapping("/products/purchases/{id}")
     public void removeProductFromPurchase(@PathVariable Long purchaseId, Long productId){
         productService.removeProductFromPurchase(purchaseId, productId);

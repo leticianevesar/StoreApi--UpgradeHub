@@ -19,6 +19,7 @@ public class PurchaseController {
         this.purchaseService = purchaseService;
     }
 
+    //Get all purchases
     @GetMapping(value = "/purchases")
     public List<PurchaseResponse> getAllPurchases() {
         List<Purchase> purchases = purchaseService.findAllPurchases();
@@ -38,6 +39,7 @@ public class PurchaseController {
         return purchaseResponseList;
     }
 
+    //Get purchase by ID
     @GetMapping(value = "/purchases/{id}")
     public PurchaseResponse getPurchaseById(@PathVariable(value = "id") Long id) {
         Purchase purchase = purchaseService.findById(id);
@@ -52,6 +54,7 @@ public class PurchaseController {
         );
     }
 
+    //Create new purchase
     @PostMapping(value = "/purchases")
     public PurchaseResponse addPurchaseToCustomer(@RequestBody PurchaseRequest purchaseRequest) {
         Purchase purchase = purchaseService.addPurchase(purchaseRequest.getCustomerId(), Purchase.builder()
@@ -82,6 +85,7 @@ public class PurchaseController {
         );
     }
 
+    // Delete purchase
     @DeleteMapping(value = "/purchases/{id}")
     public void deletePurchaseById(@PathVariable(value = "id")Long id){
         purchaseService.deleteById(id);

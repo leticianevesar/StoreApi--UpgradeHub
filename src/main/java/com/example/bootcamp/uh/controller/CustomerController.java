@@ -22,6 +22,9 @@ public class CustomerController {
         this.customerServ = customerServ;
     }
 
+
+    //Get all customers
+    @GetMapping("/customers")
     public List<CustomerResponse> getCustomers() {
         List<CustomerResponse> customersRetTemp = new ArrayList<>();
         List<Customer> customers = customerServ.findAll();
@@ -86,7 +89,7 @@ public class CustomerController {
         );
     }
 
-    //Delete customer
+    //Delete customers by ID
     @DeleteMapping(value = "/customers/{id}")
     public void deleteCustomer(@PathVariable(value = "id") Long id) {
         customerServ.deleteById(id);
